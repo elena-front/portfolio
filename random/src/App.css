@@ -1,0 +1,11 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(192, 214, 233);
+    color: rgb(3, 3, 112);
+}
+h1{
+    color: rgb(4, 4, 167);
+}
+button{
+    color: rgb(3, 3, 112); ;
+}
