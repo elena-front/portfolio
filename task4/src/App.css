@@ -1,0 +1,137 @@
+html,
+body {
+  margin: 0 10%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(243, 249, 255);
+}
+h1 {
+  color: rgb(99, 47, 104);
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+.pictures {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+}
+img {
+  width: 250px;
+  height: 300px;
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  gap: 20px;
+  border-color: rgb(184, 184, 184);
+  border-radius: 10px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px 20px 0px 20px;
+}
+
+.namePrice {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: scroll;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.app {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+}
+
+.pageNumber {
+  padding: 10px 15px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(250, 252, 253);
+  border-color: rgb(184, 184, 184);
+  cursor: pointer;
+}
+.pageNumber:hover:not(:disabled),
+.pageNumber.active {
+  background-color: rgb(204, 145, 243);
+  color: white;
+}
+.pageNumber:disabled {
+  background-color: rgb(207, 207, 207);
+  cursor: not-allowed;
+}
+
+.newMessage {
+  padding: 10px;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  color: rgb(189, 190, 192);
+  border-radius: 10px;
+  border-color: rgb(184, 184, 184);
+}
+.newMessage:hover {
+  border-color: rgb(204, 145, 243);
+}
+.newMessage.error {
+  border-color: red;
+}
+.newMessage:focus-visible {
+  color: black;
+}
+
+.message {
+  width: 200px;
+  background-color: rgb(233, 199, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.message.reply {
+  background-color: rgb(180, 220, 253);
+  align-self: flex-end;
+}
+
+@media (max-width: 1200px) {
+  /* .pictures {
+    width: 100%;
+  } */
+  .app {
+    flex-direction: column;
+  }
+  .chat {
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .pictures {
+    flex-flow: row wrap;
+    justify-content: center;
+}}
